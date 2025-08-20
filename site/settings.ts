@@ -392,7 +392,7 @@ export function renderBookmarkEditor(params: Record<string, string>) {
    const bookmark: Bookmark | undefined = params["source"]
       ? {
            source: (params["source"] + "/") as SourcePrefix,
-           label: params["feed"] ?? "",
+           label: "",
            ids: params["feed"] ? params["feed"].split("+") : [],
            isDefault: false,
         }
